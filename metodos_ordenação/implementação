@@ -18,3 +18,6 @@ printf("Posicao %d = %d\n", i, vetor[i]);
 }
 return 0;
 }
+
+
+>>>BUBBLE SORT<<<

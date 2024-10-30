@@ -1,0 +1,22 @@
+#include <stdio.h>
+#define n 5
+int main() {
+int vetor[n] = {3, 5, 1, 2, 4};
+int aux, i, j, k, min;
+for (i = 0; i < n; i++) {
+min = i;
+for (j = i + 1; j < n; j++) {
+if (vetor[j] < vetor[min]) {
+min = j;
+}
+}
+aux = vetor[min];
+vetor[min] = vetor[i];
+vetor[i] = aux;
+}
+printf("Ordenado:\n");
+for (i = 0; i < n; i++) {
+printf("Posicao %d = %d\n", i, vetor[i]);
+}
+return 0;
+}
